@@ -1,8 +1,10 @@
+/* eslint-disable max-len */
 import { ReactComponent as Logo } from 'assets/logo.svg';
 import nikeJordanImg from 'assets/nike_jordan.png';
 import nikeLogoImg from 'assets/nike_logo.png';
 import pumaLogoImg from 'assets/puma_logo.png';
 import adidasLogoImg from 'assets/adidas_logo.png';
+import benefitImg from 'assets/benefit.svg';
 
 export const headerContent = {
   navigation: [
@@ -64,19 +66,29 @@ export const logotypesList = [
   },
 ];
 
-export const advantages = [
+export const benefits = [
   {
-    icon: {},
+    icon: {
+      src: benefitImg,
+      title: 'benefit icon',
+    },
     title: 'Цена',
-    description: '',
+    description:
+      'Что нибудь о том что дешево, еще немного текста для вида, потом еще и еще, скоро будет слишком много, а фантазия отсутствует, как быть...',
   },
   {
-    icon: {},
+    icon: {
+      src: benefitImg,
+      title: 'benefit icon',
+    },
     title: 'Ассортимент',
     description: 'Обширный выбор моделей различных брендов включая',
   },
   {
-    icon: {},
+    icon: {
+      src: benefitImg,
+      title: 'benefit icon',
+    },
     title: 'Качество',
     description: 'Все товары являются оригиналами, что подтверждается сертификатом и гарантией',
   },

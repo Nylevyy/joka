@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { bannerContent, logotypesList } from 'content';
+import { bannerContent, logotypesList, benefits } from 'content';
 import { Banner } from 'components/Banner';
 import { ImagesList } from 'components/ImagesList';
+import { IconList } from 'components/IconList';
+import { Section } from 'components/Section';
 
 function MainPage() {
   return (
@@ -14,7 +16,13 @@ function MainPage() {
         img={bannerContent.image}
       />
 
-      <ImagesList images={logotypesList} />
+      <Section>
+        <ImagesList images={logotypesList} />
+      </Section>
+
+      <Section>
+        <IconList items={benefits} />
+      </Section>
     </>
   );
 }

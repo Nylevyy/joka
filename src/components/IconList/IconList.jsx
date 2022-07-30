@@ -17,7 +17,7 @@ function IconList({ items }) {
             {item.title && <span className={css.title}>{item.title}</span>}
           </div>
 
-          {item.description && <span>{item.description}</span>}
+          {item.description && <span className={css.description}>{item.description}</span>}
 
           {item.button && <Button {...item.button} />}
         </div>
