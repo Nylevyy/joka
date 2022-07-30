@@ -1,0 +1,27 @@
+@import 'theme/index.scss';
+
+.iconList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.title {
+  @include typo-h4;
+
+  font-weight: $fontBold;
+}

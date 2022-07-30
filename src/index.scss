@@ -1,0 +1,130 @@
+@import 'theme/index.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  max-width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  margin: 0;
+  color: $textMain;
+  font-family: $fontFamily;
+  font-weight: $fontRegular;
+  overflow-x: hidden;
+}
+
+#__next {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+button {
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: transparent;
+  font-family: $fontFamily;
+  font-weight: $fontBold;
+}
+
+input:not([type='checkbox']),
+textarea {
+  appearance: none;
+  font-family: $fontFamily;
+  -webkit-touch-callout: initial;
+  user-select: initial;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 10px 0;
+}
+
+ul.semantic {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+section {
+  color: $textMain;
+  font-weight: $fontRegular;
+}
+
+h1 {
+  margin: 20px 0;
+
+  @include typo-h1;
+}
+
+h2 {
+  margin: 10px 0;
+
+  @include typo-h2;
+}
+
+h3 {
+  margin-bottom: 16px;
+  font-weight: $fontRegular;
+
+  @include typo-h3;
+}
+
+h4 {
+  margin: 8px 0;
+  font-weight: $fontRegular;
+  
+  @include typo-h4;
+}
+
+h5 {
+  margin: 10px 0;
+  font-weight: $fontRegular;
+
+  @include typo-h5;
+}
+
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+p {
+  margin: 10px 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid $textSecondary;
+  margin: 10px 0;
+}

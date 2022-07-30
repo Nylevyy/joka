@@ -1,0 +1,34 @@
+@import 'theme/index.scss';
+
+.banner {
+  @include bg-gradient;
+
+  padding: 176px 0;
+}
+
+.container {
+  display: flex;
+  max-width: $containerWidth;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.content {
+  color: $textInversive;
+}
+
+.text {
+  @include typo-big;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.image {
+  width: 570px;
+  height: 528px;
+}

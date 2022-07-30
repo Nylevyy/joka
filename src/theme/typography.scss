@@ -1,0 +1,43 @@
+$fontFamily: 'Comfortaa', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$fontRegular: 400;
+$fontBold: 700;
+
+@mixin typo-h1 {
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -3px;
+}
+
+@mixin typo-h2 {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+
+@mixin typo-h3 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+
+@mixin typo-h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin typo-h5 {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+}
+
+@mixin typo-big {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin typo-default {
+  font-size: 16px;
+  line-height: 32px;
+}

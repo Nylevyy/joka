@@ -1,0 +1,37 @@
+@import 'theme/index.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.mode-primary {
+    padding: 16px 40px;
+    background-color: $primary;
+    border-radius: 12px;
+    color: $textInversive;
+  }
+
+  &.mode-secondary {
+    padding: 14px 38px;
+    border: 2px solid $primary;
+    border-radius: 12px;
+    color: $textInversive;
+  }
+
+  &.mode-inline {
+    @include typo-default;
+
+    &.theme-dark {
+      color: $textInversive;
+    }
+
+    &.theme-light {
+      color: $textMain;
+    }
+  }
+}
